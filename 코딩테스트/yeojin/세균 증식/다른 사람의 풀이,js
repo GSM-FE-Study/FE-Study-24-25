@@ -1,0 +1,8 @@
+function solution(n, t) {
+
+    return n*Math.pow(2,t);
+}
+
+/*
+  Math.pow() : 앞 인자를 밑으로 하고 뒤 인자를 지수로하는 제곱 값을 반환한다.
+*/
