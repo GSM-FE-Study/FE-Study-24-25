@@ -1,0 +1,19 @@
+function solution(cipher, code) {
+  var answer = [];
+  cipher = cipher.split("");
+  cipher.unshift('');
+  for(let i = 0; i < cipher.length; i++){
+      if (i % code == 0){
+          answer.push(cipher[i]);
+      }
+  }
+  answer = answer.join('');
+  return answer;
+}
+
+/*
+  split() : 문자열을 주어진 구분자를 기준으로 나누어 배열로 반환한다.
+  unshift() : 해당 인자를 배열의 맨 앞에 추가한다.
+  push() : 해당 인자를 배열의 맨 끝에 추가한다.
+  join() : 배열을 문자열로 반환한다.
+*/
